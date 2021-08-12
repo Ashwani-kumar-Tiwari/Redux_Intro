@@ -10,7 +10,7 @@ function Ball(props) {
     //6
     return (
         <div>
-            <h1>Number of Balls {props.balls}</h1>
+            <h1>Number of Balls : {props.balls}</h1>
             <button
                 onClick = {props.buyBalls}
             >Buy Balls</button>
@@ -24,7 +24,7 @@ function Ball(props) {
 const mapStateToProps = store => {
     console.log("in map state to prop", store);
     // state variable change
-    return store;
+    return store.Ball;
 }
 // dispatch action
 const mapDispatchtoProps = dispatch => {
